@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    triggers {
-        pollSCM('* * * * *') // Cada minuto, para pruebas. Sustituir por 'SCM webhooks' en real.
-    }
+
     stages {
         stage('Instalar dependencias') {
             steps {
