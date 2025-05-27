@@ -2,7 +2,7 @@
 
 Este repositorio es una adaptación del proyecto original de [dinesh24murali](https://github.com/dinesh24murali/example_repo/tree/main/prometheus_grafana_example), que ya incluye la configuración básica de Prometheus, Grafana y cAdvisor para monitorización de contenedores Docker.
 
-## ὓ9 Requisitos previos
+## 📌 Requisitos previos
 
 * Docker
 * Docker Compose
@@ -14,7 +14,7 @@ git clone https://github.com/dinesh24murali/example_repo.git
 cd example_repo/prometheus_grafana_example
 ```
 
-## Ὄ2 Archivos a sustituir
+## 🛠️ Archivos a sustituir
 
 Debes sustituir los siguientes archivos del repositorio clonado por los que están en este repositorio:
 
