@@ -77,41 +77,69 @@ docker compose up -d --build
 ```
 
 ---
+## 📸 Explicación de capturas
 
-## 📄 Explicación de capturas
-
-### `1.png` - Creación de la red
+### 1.png - Creación de la red
 
 Se muestra la creación manual de la red Docker `mylocalnet` con `--subnet=172.30.0.0/16`.
 
-### `2.png` - Construcción e inicio del entorno
+![1.png](assets/1.png)
+
+---
+
+### 2.png - Construcción e inicio del entorno
 
 Se observan los pasos de `docker compose build` seguido de `up -d`, mostrando la descarga y arranque de contenedores correctamente.
 
-### `3.png` - cAdvisor funcionando
+![2.png](assets/2.png)
+
+---
+
+### 3.png - cAdvisor funcionando
 
 El contenedor cAdvisor está disponible en `http://localhost:8080`, mostrando información del sistema, procesos y uso de recursos en tiempo real.
 
-### `4.png` - Grafana levantado
+![3.png](assets/3.png)
+
+---
+
+### 4.png - Grafana levantado
 
 Interfaz inicial de Grafana accediendo a `http://localhost:3000`. Aún sin data sources configuradas.
 
-### `5.png` - Prometheus operando
+![4.png](assets/4.png)
+
+---
+
+### 5.png - Prometheus operando
 
 Prometheus está funcionando en `http://localhost:9090`, mostrando una gráfica con las peticiones HTTP recibidas por códigos 2XX.
 
-### `6.png` - Node Exporter como servicio
+![5.png](assets/5.png)
+
+---
+
+### 6.png - Node Exporter como servicio
 
 El servicio `node_exporter` está activo como daemon de systemd. Muestra que está escuchando correctamente en el puerto 9100.
 
-### `7.png` - Estado de targets Prometheus
+![6.png](assets/6.png)
+
+---
+
+### 7.png - Estado de targets Prometheus
 
 Todos los targets configurados (cadvisor, node, prometheus, servidor remoto y traefik) están en estado UP.
 
-### `8.png` - Panel en Grafana
+![7.png](assets/7.png)
+
+---
+
+### 8.png - Panel en Grafana
 
 Ejemplo de un panel con la métrica `node_cpu_seconds_total`, mostrando el uso de CPU del servidor remoto segmentado por modo de uso (user, system, idle...).
 
+![8.png](assets/8.png)
 ---
 
 ## 📖 Referencias
